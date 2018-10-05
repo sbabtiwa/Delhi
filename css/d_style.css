@@ -1,3 +1,7 @@
+.item, .item2, .current{
+	padding: 2%;
+}
+
 nav ul {
 
 	list-style-type: none;
@@ -43,6 +47,7 @@ nav a {
 
  }
 
+
  .background-image{
 
 	background-image: url("../images/delhi.jpg");
@@ -66,34 +71,34 @@ nav a {
 
  .container{
 	display: grid;
+	
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
-	
-
-
 
  }
 
- .image-container{ 
-	display: grid;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
-
-
-  }
 
  .item{
 
+	grid-column-start: 1;
+	grid-column-end: 3;
  	text-align: center;
  	
  }
 
- .item2{ 
+.item2{
 
-	grid-column: 1/5;
+	text-align: left;
 
   }
 
+/* .right{
+	text-align: right
+  }
+
+.left{
+	text-align: left;
+}*/
 
  .text-item{ 
 
@@ -109,6 +114,17 @@ nav a {
     width: 100%;
 
 }
+
+@media all and (min-width: 700px){ 
+ .image-container{ 
+ 	background: yellow;
+	display: grid;
+	grid-auto-columns: 1fr 1fr; /*HOW MANY COLUMNS??  1fr 1fr or 3fr 1fr*/
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+
+}
+  }
 
 .culture-border{
 
