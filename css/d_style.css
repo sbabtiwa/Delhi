@@ -39,9 +39,9 @@ nav li {
 nav li a {
 
 	display: block;
-	/*float: left;*/
-	/*padding: 5px 10px;*/
-	/*width: 20%;*/
+/*	float: left;*/
+/*	padding: 5px 10px;
+	width: 20%;*/
 	text-align: center;
 	text-decoration: none;
 
@@ -152,7 +152,7 @@ nav li a:hover{
 
 /*Changing navigation style for mobile*/
  @media screen and (min-width: 320px) and (max-width: 767px) {
-	nav li{
+	nav li {
 		float:none;
 		width: 100%;
 	}
