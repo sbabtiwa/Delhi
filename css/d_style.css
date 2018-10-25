@@ -1,3 +1,8 @@
+*{
+
+	box-sizing: border-box;
+}
+
 .item, .item2, .current{
 	padding: 2%;
 }
@@ -8,26 +13,47 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: #33F6FF;
 
 
 }
-
-
 
 nav li {
 
-	display: inline-block;
+	float:left;
 	width: 20%;
+	border-right: 1px solid #17202A;
+
+}
+
+/*nav li {
+
+	display: block;
+	width: 20%;
+	color: #FF8A33;
+
 	
 
-}
+}*/
 
-nav a {
+nav li a {
 
-
+	display: block;
+	/*float: left;*/
+	/*padding: 5px 10px;*/
+	/*width: 20%;*/
+	text-align: center;
 	text-decoration: none;
 
+
 }
+
+nav li a:hover{
+	
+	background-color: #A233FF;
+
+}
+
 
  img {
 
@@ -56,6 +82,7 @@ nav a {
 	height: 400px;
 	text-align: center;
 	color: #1B3D61;
+	margin: 25px 10px;
 
 
 
@@ -92,6 +119,7 @@ nav a {
 
   }
 
+
 /* .right{
 	text-align: right
   }
@@ -115,7 +143,38 @@ nav a {
 
 }
 
-@media all and (min-width: 700px){ 
+.culture-border{
+
+	border: 1px solid #252121;
+
+}
+
+
+/*Changing navigation style for mobile*/
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+	nav li{
+		float:none;
+		width: 100%;
+	}
+
+ }
+
+
+/*Making images larger on history page for tablet*/
+ @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+	/*[class^= "image"] {*/
+		/*width: 100vh;*/
+	/*}*/
+	.image{
+		border: 10px solid blue;
+		width: 300wh;
+		display:block;
+	}
+
+ }
+
+/*Changing image layout on history page for desktop*/
+@media all and (min-width: 992px){ 
  .image-container{ 
  	background: yellow;
 	display: grid;
@@ -126,8 +185,3 @@ nav a {
 }
   }
 
-.culture-border{
-
-	border: 1px solid #252121;
-
-}
