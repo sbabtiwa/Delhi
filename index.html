@@ -10,17 +10,15 @@
 	<title>About Delhi</title>
 </head>
 <body>
-	<a class="skip-main" href="#main">Skip to main content</a>
 <nav>
 	<ul>
-		<li><a href = "index.html" class = "current myButton"> About </a></li>
-		<li><a href = "history.html" class = "myButton"> History </a></li>
-		<li><a href = "tourism.html" class = "myButton"> Tourist Attractions </a></li>
-		<li><a href = "culture.html" class = "myButton"> Culture </a></li> 
+		<li><a href = "index.html" class = "current"> About </a></li>
+		<li><a href = "history.html"> History </a></li>
+		<li><a href = "tourism.html"> Tourist Attractions </a></li>
+		<li><a href = "culture.html"> Culture </a></li> 
 	</ul>
 </nav>
-
-<main id = "main" tabindex="-1">
+<main>
 <h2 class = "background-image"> Visit Delhi </h2>
 <div class = "container">
 	<div class = "item">
@@ -30,47 +28,6 @@
 	<p>Hello there! Welcome to this site on the city of Delhi, which holds the capital of India (New Delhi). There is a lot of information to explore here, from history to tourist attractions to culture. Take a look around and learn more about an ancient city with a modern feel. </p>
 	<p>To learn more about Delhi tourism,  <a href = "http://www.delhitourism.gov.in/delhitourism/index.jsp">  check out this site. </a> </p>
 	<h2 class = "item">"I asked my soul: What is Delhi? She replied: The world is the body and Delhi its life" -Mirza Asadullah Khan Ghalib </h2>
-	<h3> <em>Have you been to Delhi? </em> </h3>
-	<p> Tell us about your experience! </p> <br>
-	<form name = "tripform" action = "index.html" onsubmit = "return validateForm()"  method = "post">
-	Name: <br>
-	<input type = "text" name = "name"> <br> <br>
-	<textarea name = "textarea" id = "triptext" rows = "5" cols = "30" minlength = "10" maxlength = "280" placeholder = "Write Something..."> </textarea> <br> <br>
-	<p> Rate your trip! </p>
-	<label>
-		<input type = "radio" value = "1" name = "rate" id= "one"> 1
-	 </label>
-	<label> 
-		<input type = "radio" value = "2" name = "rate" id = "two"> 2
-	</label>	
-	<label> 
-		<input type = "radio" value = "3" name = "rate" id = "three"> 3
-	</label>
-	<label>
-		<input type = "radio" value = "4" name = "rate" id = "four"> 4
-	</label>
-	<label>
-		<input type = "radio" value = "5" name = "rate" id = "five"> 5
-	</label> <br> <br>
-	<input type = "submit" value = "Submit"> 
-	</form>
-<script type = "text/javascript">
-	
-	function validateForm() {
-		var valid = document.forms["tripform"]["name"].value;
-		if (valid == "") {
-			alert("Fill in your name!");
-			return false 
-		}
-	}
-	function validateText(){
-		document.getElementbyID("triptext").required = true;
-		document.getElementbyID("")
-
-
-	}
-</script>
-
 </main>
 </body>
 </html>
