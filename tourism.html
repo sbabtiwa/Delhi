@@ -7,31 +7,128 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 	<meta name = "viewport" content= "width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script>
 	<title>Tourist Attractions</title>
 </head>
 <body>
+	<a class="skip-main" href="#main">Skip to main content</a>
 <nav>
 	<ul>
-		<li><a href = "index.html"> About </a></li>
-		<li><a href = "history.html"> History </a></li>
-		<li><a href = "tourism.html" class = "current"> Tourist Attractions </a></li>
-		<li><a href = "culture.html"> Culture </a></li> 
+		<li><a href = "index.html" class= "myButton"> About </a></li>
+		<li><a href = "history.html" class = "myButton"> History </a></li>
+		<li><a href = "tourism.html" class = "current myButton"> Tourist Attractions </a></li>
+		<li><a href = "culture.html" class = "myButton"> Culture </a></li> 
 	</ul>
 </nav>
-	<h1>Tourist Attractions</h1>
-	<p> <strong> India Gate <i class="fas fa-archway fa-1x"></i> </strong> - An “Arc de Triomphe”-style gate that serves as a memorial to 70,000 members of the British Indian Army who died in the period 1914-21 in the First World War. </p>
-	<img src="images/india_gate.jpg" alt="An image of India Gate in the evening." class = "main">
-	<p> <strong> Red Fort <i class="fab fa-fort-awesome fa-1x"></i> </strong> – A towering Mughal fortress built in the 17th century that is made from red sandstone. It became a UNESCO World Heritage Site in 2007. </p>
-	<img src="images/red_fort.jpg" alt="An image of the Red Fort in the day." class = "main">
-	<p> <strong> Connaught Place <i class="fas fa-shopping-bag fa-1x"></i> </strong> – A busy business and financial hub, centered on a ring of colonnaded Georgian-style buildings with international store chains, theaters, and restaurants. </p>
-	<img src="images/connaught_place.jpg" alt="An image of Connaught Place at night." class = "main">
-	<p> <strong> Chandni Chowk <i class="fas fa-mortar-pestle fa-1x"></i> </strong> – Located in the heart of Old Delhi. It is a huge market where one can purchase spices, jewelry, and colorful Indian outfits. </p>
-	<img src="images/chandni_chowk.jpg" alt="An image of a busy road in Chandni Chowk during the day." class = "main">
-	<p> <strong> Qutub Minar <i class="fas fa-mosque fa-1x"></i>  </strong> – A 240 ft tower built in 1193 by the Delhi Sultanate. It became a UNESCO World Heritage Site in 1993. </p>
-	<img src="images/qutub_minar.jpg" alt="An image of Qutub Minar in the day." class = "main">
+	<h1>Tourist Attractions</h1> 
+	<br> 
+	<h2> Image Slideshow </h2>
+	<br>
+	<div class= "slideshow-container">
+		<div class = "Dimages fade">
+			<div class = "picnum"> 1 / 6 </div>
+			<img src = "images/india_gate.jpg" alt="An image of India Gate in the evening."  class = "carousel">
+			<div class = "text"><strong> India Gate </strong> </div>
+		</div>
+		<div class = "Dimages fade">
+			<div class = "picnum"> 2 / 6 </div>
+			<img src = "images/red_fort.jpg" alt="An image of the Red Fort in the day." class = "carousel">
+			<div class = "text"><strong> Red Fort </strong> </div>
+		</div>
+		<div class = "Dimages fade">
+			<div class = "picnum"> 3 / 6 </div>
+			<img src = "images/connaught_place.jpg" alt = "An image of Connaught Place at night." class = "carousel">
+			<div class = "text"><strong> Connaught Place </strong> </div> 
+		</div>
+		<div class = "Dimages fade">
+			<div class = "picnum"> 4 / 6 </div>
+			<img src = "images/chandni_chowk.jpg" alt = "An image of a busy road in Chandni Chowk during the day." class = "carousel">
+			<div class = "text"><<strong> Chandni Chowk </strong> </div>
+		</div>
+		<div class = "Dimages fade">
+			<div class = "picnum"> 5 / 6 </div>
+			<img src = "images/qutub_minar.jpg" alt="An image of Qutub Minar in the day." class = "carousel">
+			<div class = "text"> <strong> Qutub Minar </strong> </div>
+		</div>
+		<div class = "Dimages fade">
+			<div class = "picnum"> 6 / 6 </div>
+			<img src = "images/metro.jpg" alt = "An image of the Delhi Metro pulling up at a station." class = "carousel">
+			<div class = "text"> <strong> Delhi Metro </strong> </div>
+		</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+  		<span class="dot" onclick="currentSlide(4)"></span> 
+  		<span class="dot" onclick="currentSlide(5)"></span> 
+  		<span class="dot" onclick="currentSlide(6)"></span> 
+	</div>
+	
+	<br>
+	<br> 
+
+<main id = "main" tabindex="-1">
+	<h3> More Information </h3>
+	<br>
+	<br>
+
+	<p> <strong> India Gate <i class="fas fa-archway fa-1x"></i> </strong> - An “Arc de Triomphe”-style gate that serves as a memorial to 70,000 members of the British Indian Army who died in the period 1914-21 in the First World War. </p> <br>
+	<!-- <img src="images/india_gate.jpg" alt="An image of India Gate in the evening." class = "main"> -->
+	<p> <strong> Red Fort <i class="fab fa-fort-awesome fa-1x"></i> </strong> – A towering Mughal fortress built in the 17th century that is made from red sandstone. It became a UNESCO World Heritage Site in 2007. </p> <br>
+	<!-- <img src="images/red_fort.jpg" alt="An image of the Red Fort in the day." class = "main"> -->
+	<p> <strong> Connaught Place <i class="fas fa-shopping-bag fa-1x"></i> </strong> – A busy business and financial hub, centered on a ring of colonnaded Georgian-style buildings with international store chains, theaters, and restaurants. </p> <br>
+<!-- 	<img src="images/connaught_place.jpg" alt="An image of Connaught Place at night." class = "main"> -->
+	<p> <strong> Chandni Chowk <i class="fas fa-mortar-pestle fa-1x"></i> </strong> – Located in the heart of Old Delhi. It is a huge market where one can purchase spices, jewelry, and colorful Indian outfits. </p> <br>
+	<!-- <img src="images/chandni_chowk.jpg" alt="An image of a busy road in Chandni Chowk during the day." class = "main"> -->
+	<p> <strong> Qutub Minar <i class="fas fa-mosque fa-1x"></i>  </strong> – A 240 ft tower built in 1193 by the Delhi Sultanate. It became a UNESCO World Heritage Site in 1993. </p> <br>
+<!-- 	<img src="images/qutub_minar.jpg" alt="An image of Qutub Minar in the day." class = "main"> -->
 	<p> <strong> Delhi Metro <i class="fas fa-subway fa-1x"></i> </strong> - The largest and busiest metro in India, the world’s 9th longest metro system, and the 16th largest in ridership. It has 214 stations and 7 lines. </p>
 	<p>For more information on the Delhi Metro, <a href = "http://www.delhimetrorail.com/"> click this link. </a> </p>
-	<img src="images/metro.jpg" alt="An image of the Delhi Metro pulling up at a station." class = "main">
+<!-- 	<img src="images/metro.jpg" alt="An image of the Delhi Metro pulling up at a station." class = "main"> -->
+</main>
+
+	<script type="text/javascript">
+	
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+  		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+  		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+  		var i;
+  		var slides = document.getElementsByClassName("Dimages");
+  		var dots = document.getElementsByClassName("dot");
+  		if (n > slides.length) {slideIndex = 1}    
+  		if (n < 1) {slideIndex = slides.length}
+  		for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none";  
+  		}
+  		for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		slides[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " active";
+	}
+	</script>
+<!-- $(window).on("scroll", function(){
+			if($(window).scrollTop()) {
+				$("nav").addClass("blue");
+			}
+			else{
+				$("nav").removeClass("blue");
+			}
+		}) -->
 
 </body>
 </html>
