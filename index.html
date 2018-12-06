@@ -34,14 +34,14 @@
 	<p> Tell us about your experience! </p> <br>
 	<form name = "tripform" action = "index.html" onsubmit = "return validateForm()"  method = "post">
 	Name: <br>
-	<label>
-		<input type = "text" name = "name" aria-label = "name"> <br> <br>
+	<label for = "name">
+		<input type = "text" name = "name" id = "name" aria-label = "name"> <br> <br>
 	</label>
 	<label for = "triptext">
-		<textarea name = "textarea" id = "triptext" rows = "5" cols = "30" minlength = "10" maxlength = "280" aria-label = "text area"> Write Something... </textarea> <br> <br>
+		<textarea name = "contentarea" id = "triptext" rows = "5" cols = "30" minlength = "10" maxlength = "280" aria-label = "text area"> Write Something... </textarea> <br> <br>
 	</label>
 	<p> Rate your trip! </p>
-	<label>
+	<label for = >
 		<input type = "radio" value = "1" name = "rate" id= "one"> 1
 	 </label>
 	<label> 
