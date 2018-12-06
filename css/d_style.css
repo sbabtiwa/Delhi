@@ -379,8 +379,8 @@ a.skip-main:focus, a.skip-main:active {
   }
 
 @media all and (min-width: 991px){
-  .cul-place{
-    flex-
+  .cul-container{
+    flex-wrap: nowrap;
     background: brown;
 
 
