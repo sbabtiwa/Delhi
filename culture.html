@@ -30,34 +30,6 @@
 		<li> <strong> India Art Fair </strong> – One of India’s largest annual art events showcasing modern and contemporary art from worldwide. It is scheduled to be held in late January/early February. </li> 
 		<li> <strong> International Mango Festival </strong> – All about India’s national fruit! 500+ varieties of mangoes are usually displayed, along with activities like mango quizzes, a mango eating tournament, etc. This event takes place between the months of June and July. </li> 
 	</ul> <br>
-
-	<h3> Festival Pictures </h3>
-
-	<div class = "cul-container">
-
-		<div class = "cul-item">
-			<figure>
-				<img src="images/kite_fest.jpg" alt="An image of a person flying a large kite at the International Kite Festival." class= "culture-border">
-				<figcaption> <strong>Figure 1 </strong> - A person flying a large kite at the International Kite Festival. </figcaption>
-			</figure>
-		</div>
-		<figure>
-			<img src="images/qutub_fest.jpg" alt="An image of a concert at the Qutub Festival." class= "culture-border">
-			<figcaption> <strong>Figure 2 </strong> - A concert at the Qutub Festival. </figcaption>
-		</figure>
-		<div class = "cul-item">
-			<figure>
-				<img src="images/art_fair.jpg" alt="An image of the crowd at the Art Fair that takes place in Delhi each year." class= "culture-border">
-				<figcaption><strong>Figure 3 </strong> - The crowd at the Art Fair that takes place in Delhi each year. </figcaption>
-			</figure>
-		</div>
-			<div class = "cul-item">
-				<figure>
-					<img src="images/mango_fest.jpg" alt="An image of contestants participating in a mango-eating contest at the Mango Festival." class= "culture-border">
-					<figcaption><strong>Figure 4 </strong> - Contestants participating in a mango-eating contest at the Mango Festival. </figcaption>
-				</figure>
-			</div>
-	</div>
 	<br>
 	<h2> Food </h2> <br>
 	<p> Experience a wide range of Indian food at: </p> <br>
@@ -68,26 +40,61 @@
 	<p>Looking for North Indian restaurants in Delhi? <a href = "https://www.tripsavvy.com/best-north-indian-restaurants-in-delhi-1539826"> Click here to take a look at this site. </a> </p>
 	<p> Craving the best restaurants? <a href = "https://www.tripadvisor.com/Restaurants-g304551-New_Delhi_National_Capital_Territory_of_Delhi.html"> Click here for that information. </a> </p> <br>
 
-	<h3> Market and Restaurant Pictures </h3>
-
-	<div class = "cul-container">
-		<div class = "cul-item">
-			<figure>
-				<img src="images/dilli_haat.jpg" alt="An image of one of the market areas in Dilli Haat." class= "culture-border">
-				<figcaption><strong>Figure 5  </strong> - One of the market areas in Dilli Haat.</figcaption>
-			</figure>
+	<h3> Celebrating Culture </h3>
+	<h4> Tab Image Gallery </h4>
+	<br>
+	<div class = "row">
+		<div class = "column">
+			<img src="images/kite_fest.jpg" alt="An image of a person flying a large kite at the International Kite Festival." class= "culture-border" onclick = "myFunction(this);">
 		</div>
-		<div class = "cul-item">
-			<figure>
-				<img src="images/veda.jpg" alt="An image of the interiors of Veda, a North Indian restaurant located in Connaught Place, Delhi." class= "culture-border">
-				<figcaption> <strong>Figure 6  </strong> - The interiors of Veda, a North Indian restaurant located in Connaught Place, Delhi.</figcaption>
-			</figure>
+		<div class = "column">
+			<img src="images/qutub_fest.jpg" alt="An image of a concert at the Qutub Festival." class= "culture-border" onclick = "myFunction(this);">
 		</div>
-		<figure>
-			<img src="images/bukhara.jpg" alt="An image of the interiors of Bukhara, a luxury restaurant located in the ITC Maurya hotel." class= "culture-border">
-			<figcaption> <strong> Figure 7  </strong> - The interiors of Bukhara, a luxury restaurant located in the ITC Maurya hotel.</figcaption>
-		</figure>
+		<div class = "column">
+			<img src="images/art_fair.jpg" alt="An image of the crowd at the Art Fair that takes place in Delhi each year." class= "culture-border" onclick = "myFunction(this);">
+		</div>
+		<div class = "column">
+			<img src="images/mango_fest.jpg" alt="An image of contestants participating in a mango-eating contest at the Mango Festival." class= "culture-border" onclick = "myFunction(this);">
+		</div>
+		<div class = "column">
+			<img src="images/dilli_haat.jpg" alt="An image of one of the market areas in Dilli Haat." class= "culture-border" onclick = "myFunction(this);">
+		</div>
+		<div class = "column">
+			<img src="images/veda.jpg" alt="An image of the interiors of Veda, a North Indian restaurant located in Connaught Place, Delhi." class= "culture-border" onclick = "myFunction(this);">
+		</div>
+		<div class = "column">
+			<img src="images/bukhara.jpg" alt="An image of the interiors of Bukhara, a luxury restaurant located in the ITC Maurya hotel." class= "culture-border" onclick = "myFunction(this);">
+		</div>
 	</div>
+
+	<!-- The expanding image container -->
+	<div class="container">
+  <!-- Close the image -->
+  		<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  		<img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  		<div id="imgtext"></div>
+	</div>
+
 </main>
+
+<script>
+	function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+</script>
 </body>
 </html>
