@@ -123,18 +123,25 @@ nav li a:hover{
 
 .index-image{
 
-  width: 1200px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
  /* margin: 25px 10px;*/
+/*  width: 100%;
+  height: auto;*/
 
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 1200px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
+/*  width: 100%;
+  height: auto;*/
   border: 1px solid #f1f1f1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
  /* perspective: 1000px; *//* Remove this if you don't want the 3D effect */
 }
 
@@ -175,6 +182,8 @@ nav li a:hover{
   color: white;
   transform: rotateY(180deg);
 }
+
+
 /* .background-image{
 
 	background-image: url("../images/delhi.jpg");
@@ -298,7 +307,7 @@ nav li a:hover{
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+.img-container {
   position: relative;
   display: none;
 }
@@ -306,17 +315,20 @@ nav li a:hover{
 /* Expanding image text */
 #imgtext {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 5px;
+  left: 5px;
   color: white;
   font-size: 20px;
+  font-weight: bold;
 }
 
 /* Closable button inside the image */
 .closebtn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+ /* top: 10px;
+  right: 15px;*/
+  top: 5%;
+  right: 23%;
   color: white;
   font-size: 35px;
   cursor: pointer;
@@ -377,7 +389,7 @@ a.skip-main:focus, a.skip-main:active {
     color: #fff;
     background-color:#000;
     left: auto;
-    top: auto;
+    top: -5px;
     width: 30%;
     height: auto;
     overflow:auto;
@@ -481,6 +493,7 @@ a.skip-main:focus, a.skip-main:active {
 }
   }
 
+/*Making images for Tab Gallery bigger on mobile*/
 @media all and (min-width: 320px) and (max-width: 767px) {
  .column{
   

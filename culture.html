@@ -20,7 +20,7 @@
 	</ul>
 </nav>
 <main id = "main" tabindex="-1">
-	<h1> Culture </h1> <br>
+	<h1 class = "item"> Culture </h1> <br>
 	<p> Being a major alpha level city, Delhi is known for its festivals and cuisine of different Indian states. </p> <br>
 	<h2> Festivals </h2> <br>
 	<p> The key festivals are: </p> <br>
@@ -68,12 +68,12 @@
 	</div>
 
 	<!-- The expanding image container -->
-	<div class="container">
+	<div class="img-container">
   <!-- Close the image -->
   		<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
   <!-- Expanded image -->
-  		<img id="expandedImg" style="width:100%">
+  		<img id="expandedImg" style="width:80%">
 
   <!-- Image text -->
   		<div id="imgtext"></div>
@@ -89,6 +89,7 @@
   var imgText = document.getElementById("imgtext");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
+  expandImg.alt = "";
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
   imgText.innerHTML = imgs.alt;
   // Show the container element (hidden with CSS)
