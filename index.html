@@ -35,30 +35,29 @@
 	<br>
 	<h3> <em>Have you been to Delhi? </em> </h3>
 	<p> Tell us about your experience! </p> <br>
-	<form name = "tripform" action = "index.html" onsubmit = "return validateForm()"  method = "post">
+	<form name = "tripform" action = "/index.html" onsubmit = "return validateForm()"  method = "post">
 	<!-- Name: <br> -->
-	<label for = "name"> Name: </label>
-		<input type = "text" name = "name" id = "name" aria-label = "name"> <br> <br>
-	<label for = "triptext">
-		<textarea name = "contentarea" id = "triptext" rows = "5" cols = "30" minlength = "10" maxlength = "280" aria-label = "text area"> </textarea> <br> <br>
-	</label>
-	<p> Rate your trip! </p>
-	<label>
-		<input type = "radio" value = "1" name = "rate" id= "one"> 1
-	 </label>
-	<label> 
-		<input type = "radio" value = "2" name = "rate" id = "two"> 2
-	</label>	
-	<label> 
-		<input type = "radio" value = "3" name = "rate" id = "three"> 3
-	</label>
-	<label>
-		<input type = "radio" value = "4" name = "rate" id = "four"> 4
-	</label>
-	<label>
-		<input type = "radio" value = "5" name = "rate" id = "five"> 5
-	</label> <br> <br>
-	<input type = "submit" value = "Submit"> 
+		<label for = "name"> Name: </label>
+			<input type = "text" name = "name" id = "name" aria-label = "name"> <br> <br>
+		<label for = "triptext"> </label>
+			<textarea name = "contentarea" id = "triptext" rows = "5" cols = "30" minlength = "10" maxlength = "280" aria-label = "text area"> </textarea> <br> <br>
+		<p> Rate your trip! </p>
+		<label>
+			<input type = "radio" value = "1" name = "rate" id= "one"> 1
+	 	</label>
+		<label> 
+			<input type = "radio" value = "2" name = "rate" id = "two"> 2
+		</label>	
+		<label> 
+			<input type = "radio" value = "3" name = "rate" id = "three"> 3
+		</label>
+		<label>
+			<input type = "radio" value = "4" name = "rate" id = "four"> 4
+		</label>
+		<label>
+			<input type = "radio" value = "5" name = "rate" id = "five"> 5
+		</label> <br> <br>
+		<input type = "submit" value = "Submit"> 
 	</form>
 	<div class = "flip-card">
 		<div class = "flip-card-inner">
